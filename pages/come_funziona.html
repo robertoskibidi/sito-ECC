@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://googleapis.com" />
+    <link rel="icon" href="../images/logo.png">
+    <title>GoodUSB - Come Funziona</title>
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="../images/logo.png" alt="Logo">
+            <span>GoodUSB</span>
+        </h1>
+    </header>
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="../pages/chi_siamo.html">CHI SIAMO</a>
+        <a href="../pages/installa.html">INSTALLA</a>
+        <a href="../pages/come_funziona.html" id="pagina-attiva">COME FUNZIONA</a>
+        <a href="../pages/manuale.html">MANUALE</a>
+    </nav>
+    <div id="margine-main">
+        <main>
+            <section id="come-funziona" class="how-it-works">
+                <h1>Come funziona GoodUSB?</h1>
+                <h2>Che cosa sono gli attacchi BadUSB?</h2>
+
+                <p>
+                    Alcuni dispositivi USB possono presentarsi al computer come periferiche differenti da quelle che sembrano essere.
+                    In particolare, alcuni dispositivi malevoli possono simulare il comportamento di una tastiera e inviare automaticamente sequenze di comandi al sistema operativo.
+                    Questa tecnica è conosciuta come Keystroke Injection e può essere sfruttata per eseguire operazioni non autorizzate.
+                </p>
+
+                <h2>L'importanza dell'analisi temporale</h2>
+
+                <p>
+                    Uno degli elementi utilizzati da AntiBadUSB per riconoscere possibili attacchi è l'intervallo di tempo tra una pressione e l'altra dei tasti.
+                    Una digitazione automatizzata può presentare intervalli molto brevi e regolari rispetto a quelli normalmente osservabili durante l'utilizzo manuale di una tastiera.
+                    Il programma utilizza quindi una soglia temporale per individuare sequenze potenzialmente anomale.
+                </p>
+                <h3>1. Il Problema: Attacchi Keystroke Injection</h3>
+                <p>I dispositivi BadUSB si camuffano da tastiere e iniettano comandi malevoli nel Prompt dei Comandi ad altissima velocità.</p>
+              
+                <h3>2. La Soluzione: Analisi Temporale</h3>
+                <p>AntiBadUSB misura il tempo tra ogni pressione dei tasti: se rileva 5 caratteri consecutivi ricevuti in meno di 30ms, classifica la digitazione come un attacco automatizzato.</p>
+              
+                <h3>3. Blocco Immediato</h3>
+                <p>Il software termina all'istante i processi <code>cmd.exe</code> e <code>powershell.exe</code> e mostra un allarme nativo, bloccando l'attacco prima dell'esecuzione.</p>
+              </section>
+        </main>
+    </div>
+    <footer>
+        <hr>
+        <p>GoodUSB - Matteo Savoiani, Roberto Marchi, Valerio Rigotti e Pietro Zanella. ©2026 tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
