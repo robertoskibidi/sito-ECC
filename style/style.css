@@ -53,10 +53,16 @@ header {
 /* NAVIGAZIONE */
 
 nav {
-    background-color: var(--blu-scuro);
-    padding: 18px 5%;
-    position: stiky;
-    top: 0;
+    position: sticky;
+    top: 0px;
+    margin-top: -6px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-inline: -10px;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    gap: clamp(6px, 3vw, 200px);
 }
 
 nav ul {
