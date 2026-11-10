@@ -55,6 +55,8 @@ header {
 nav {
     background-color: var(--blu-scuro);
     padding: 18px 5%;
+    position: stiky;
+    top: 0px
 }
 
 nav ul {
