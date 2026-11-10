@@ -56,7 +56,7 @@ nav {
     background-color: var(--blu-scuro);
     padding: 18px 5%;
     position: stiky;
-    top: -22px;
+    top: 0;
 }
 
 nav ul {
