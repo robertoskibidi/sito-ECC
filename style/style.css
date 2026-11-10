@@ -1,171 +1,253 @@
-body{
-    height: 100%;
-    background-color: #f4f4f5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+/* IMPOSTAZIONI GENERALI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header{
-    background-color: #f7931a;
-    padding: 1px;
-    margin-bottom:6px;
-    margin-top: -18px;
-    margin-left: -10px;
-    margin-right: -10px;
+html {
+    scroll-behavior: smooth;
 }
 
-header h1{
-    margin-left: clamp(20px, 3.5vw, 60px);
-    gap: 25px;
+:root {
+    --blu: #2954b6;
+    --blu-scuro: #102653;
+    --arancione: #ff9915;
+    --bianco: #ffffff;
+    --sfondo: #f3f5fa;
+    --testo: #333333;
+}
+
+body {
+    background-color: var(--sfondo);
+    color: var(--testo);
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--arancione);
+    padding: 15px 5%;
+}
+
+.intestazione {
     display: flex;
     align-items: center;
-    justify-content: left;
-    color: #18181b;
-    text-align: center;
-    font-size: clamp(45px, 3.5vw, 60px);
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    gap: 15px;
 }
-header img{
-    width: clamp(70px, 10vw, 110px);
-    height: auto;
+
+.intestazione img {
+    width: 65px;
+}
+
+.intestazione h1 {
+    color: var(--blu-scuro);
+    font-size: 32px;
 }
 
 
-#pagina-attiva{
-    text-decoration: underline;
+/* NAVIGAZIONE */
+
+nav {
+    background-color: var(--blu-scuro);
+    padding: 18px 5%;
 }
-nav{
-    position: sticky;
-    top: 0px;
-    margin-top: -6px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    margin-inline: -10px;
-    background-color: #1e3a8a;
+
+nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: clamp(6px, 3vw, 200px);
+    gap: 45px;
 }
-nav a{
-    font-size: clamp(15px, 2.5vw, 21px);
-    color: #f7931a;
+
+nav a {
+    color: var(--bianco);
     text-decoration: none;
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
-    font-weight: 1567;
     font-weight: bold;
 }
-nav a:hover{
-    color: #f4f4f5;
+
+nav a:hover {
+    color: var(--arancione);
     text-decoration: underline;
+    text-decoration-color: var(--bianco);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+nav .attivo {
+    color: var(--arancione);
+    text-decoration: underline;
+    text-decoration-color: var(--bianco);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
 }
 
 
-#margine-main{
-    background-color: #1e3a8a;
-    padding-top: 18px;
-    padding-bottom: 10px;
-    margin: -8px;
-}
-main{
-    flex: 1;
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
-    background-color: #f4f4f5;
-    border: #1e3a8a 2px solid;
-    padding: 6px;
-    padding-top: 0px;
-    border-radius: 20px;
-    margin-inline: 10px;
-    margin-top: 0px;
-    margin-bottom: 6px;
-}
-main p{
-    font-size: clamp(15px, 2vw, 19px);
-}
-main h1{
-    font-size: clamp(30px, 3.5vw, 40px);
-}
-main h2{
-    font-size: clamp(25px, 3vw, 32px);
-}
-main h3{
-    font-size: clamp(20px, 2.5vw, 24px);
-}
-main li{
-    font-size: clamp(15px, 2vw, 19px);
-}
+/* PRESENTAZIONE */
 
-.download{
+.presentazione {
+    background-color: var(--blu);
+    color: var(--bianco);
+    padding: 70px 8%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
-#download-button{
-    padding: 10px 20px;
-    font-size: 16px;
+
+.testo-presentazione {
+    width: 60%;
+}
+
+.testo-presentazione h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.testo-presentazione h2 {
+    color: var(--arancione);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testo-presentazione p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.immagine-presentazione {
+    width: 30%;
+    text-align: center;
+}
+
+.immagine-presentazione img {
+    width: 220px;
+}
+
+
+/* PULSANTI */
+
+.pulsante {
+    display: inline-block;
+    background-color: var(--arancione);
+    color: var(--blu-scuro);
+    text-decoration: none;
     font-weight: bold;
-    color: #f4f4f4;
-    background-color: #1e3a8a;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.pulsante:hover {
+    background-color: var(--blu-scuro);
+    color: var(--arancione);
+}
+
+
+/* CARATTERISTICHE */
+
+.caratteristiche {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.caratteristiche h1 {
+    color: var(--blu-scuro);
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.contenitore-card {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--bianco);
+    width: 30%;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    color: var(--blu);
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* PRESENTAZIONE PROGETTO */
+
+.progetto {
+    background-color: var(--bianco);
+    margin: 30px 5%;
+    padding: 45px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.progetto h1 {
+    color: var(--blu-scuro);
+    margin-bottom: 20px;
+}
+
+.progetto p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--blu-scuro);
+    color: var(--bianco);
+    text-align: center;
+    padding: 30px;
+}
+
+/* OMBRE DEGLI ELEMENTIa */
+
+.ombra {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* PULSANTE INSTALLAZIONE */
+#download-button {
+    background-color: var(--arancione);
+    color: var(--blu-scuro);
+    padding: 15px 25px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s ease;
-    user-select: none;
+    margin-top: 20px;
 }
 
 #download-button:hover {
-    background-color: #f7931a;
+    background-color: var(--blu);
+    color: var(--bianco);
 }
 
-#download-button.checked{
-    background-color: #475569;
-    cursor: pointer;
+#download-button:active {
+    background-color: var(--blu-scuro);
 }
 
-#ringraziamento{
-    font-size: 14px;
-    color: #475569;
-    font-weight: 600;
-    display: none;
-}
-
-
-footer{
-    flex: 1;
-    padding: 6px;
-    margin-top: 6px;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: -8px;
-    background-color: #1e3a8a;
-}
-footer p{
-    color:#f4f4f5;
-    text-align: center;
-    font-size: clamp(12px, 1.75vw, 18px);
-}
-
-
-.centrato{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-#orange{
-    color: #f7931a;
-}
-#blue{
-    color: #1e3a8a;
-}
-#grigio{
-    color: #475569;
-}
-#bianco{
-    color:#f4f4f5;
-}
-#nero{
-    color: #18181b;
+/* LISTE */
+main ul {
+    width: fit-content;
+    margin: 20px auto;
+    padding-left: 25px;
+    text-align: left;
+    line-height: 1.5;
 }

@@ -1,61 +1,241 @@
+
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GoodUSB - Come funziona</title>
+
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="https://googleapis.com" />
     <link rel="icon" href="../images/logo.png">
-    <title>GoodUSB - Come Funziona</title>
-    <script src="../script.js" defer></script>
-</head>
+<script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=r1JqBO6PW-oy2UNYU8gNacMB4uU-_Xc3I49xYhnrX1g9t48xTzQudZ6cVYwFE7bRv6Ndqf3oaQjvvWPn3LKIujMoTtBUjJP6oQEP2jg-w_2LkQuohoOj2raHzRB52zvsScOz-JRIQCIGbPMVCQJeJQn70ulIgwL9Reiatj2xi4uDNB_NwpLUPbZaHoAgZ_UpdVDj5KKPJn8xcHrr53IlxlY73Rtog_sEfxO-JwB2b21BsxKFYRr_jgAonQrduBaqQH-_4PrmTcnzraf7dgB_4kwumr4uwtELXdMUveZVhJPk9b-h-XCaKS-GfJt3xSM1pb5vp4sdoZZH94HdY_L8Fkqit6C6Tpcqs3siqw2w_4h-CqAbW75WyqzPAMe2mOg_jfHBfSErEG5om5Pm0n-ztT6ZoYpLx1tq5XGGkfFYR73AVNIS-oMXsWK5J2vSoCfIb84_I5k7HHQlAvc2OWsbiF4boW4CnHGIs-CAmjL5mWQ2nRRbPDVfQ9RMcvWNSRR_X2aqr5MIEUk_I0L3LmvIuqCY7DGk0P6dVMXiWRRL0GNFtwth6uELat-at1YM2pUZhiSJcFHCLtm6qajJefsi208BqJ5yS0GReNwsvaNpX-dvsgWSK6cfBkzj8lMhnMFkDcsUqyUvCQ8Ztc0qOOMGBNqwkTkTddsNcfywXMkSTWxc7dQJh28Lbwmi6C7oMq_ChypiBbjlsFKiUyqljYKIN8lW0q7qRhU7lsRhwQXrG9vSH6S1KPRZvE3Pe1gya0saeZ3xQbXZaDiAJ3i7-zI8vRI-TkfpHjiEFuc2vbI6F6dMfb79dhBWeRGK0S-g77p_NEz9gGF2XwjJVqVmq0ojWOt_E-emSdJJtOsYWLcTwsanL8LmZsbIHuEFmcrvzr-L-jIjjNuNR4ByupB3Rpy_7HeDHB1yUzlb3Z3QIZBeEn_tVTR1MSuYDTxQPPKF3TqdvzWJiLCohB_6sWuEdWF6_i3aeLnb323Eiqp-te0deklyKOikLSHVuIMmi-dF-455nPWARlFiR0WRw03R_8PCUZqInvHGpxZgeM4C1zw50BrEz5J4YzYoyDRWQKqD2L-sTXPuBM8eGMvcHmNbZsrng1Z8-rDsQuGh1hPkgdRxCgQExvxA-nsDI1YvnBQOEMcCJeLgV7HgI3p3Q3gu2VTvEw0uvfdaKuP2Tpg8CuhkR9USywfGB1YjfBSQT2O8CwUeyevUiyU7UsRYCTgcIavOKpgqLVDdAZn42Y_WH42F6xLVME42IgFo52_xGh07U3_Qx6BqEz851OT0ykqfW8bOxlkDGBj-CghtJGDka1MrZnwrTg930nBhpRG0Z6727ky4zNSPUt2GRxqoO3ppaVhXByDQ-9XmAEBwUQgZxBhk1TGoZiUYd1YqndycqRp20pNtTGxgK0P8DOae0Q5T8WqvbWtbQdrViL0EUmia9UJBJhxs48WHhrCnOKlM6TscBFKHZcXasKteHTe8_0C2xCic3HYD7pGyHDCUa5GsjqFTvVoecj9LeRK4UGCOH2Bt7bS75Plny6k_DnD-OxlildF3-92Fg2vz3pUzx3xHItSOjv_xe3yoXAH8mg2jwuTgFOS7tceeUDhRlwskLrZJxdTiFgI8d-tbaCuTC7Co0fDMjJx1ChbmkT4RyQWCdgeTTF1vS63rReUPFqfqU8xpstxDOZo17Bo7WIrepdBM7YoTItBVSc4A-Ot60soqJf8yyP5G" nonce="57a4f9de8d4b5807f8fff37728a155c8" charset="UTF-8"></script></head>
+
 <body>
+
+    <!-- HEADER -->
     <header>
-        <h1>
-            <img src="../images/logo.png" alt="Logo">
-            <span>GoodUSB</span>
-        </h1>
+        <div class="intestazione">
+            <img src="../images/logo.png" alt="Logo GoodUSB">
+            <h1>GoodUSB</h1>
+        </div>
     </header>
+
+
+    <!-- NAVIGAZIONE -->
     <nav>
-        <a href="../index.html">HOME</a>
-        <a href="../pages/chi_siamo.html">CHI SIAMO</a>
-        <a href="../pages/installa.html">INSTALLA</a>
-        <a href="../pages/come_funziona.html" id="pagina-attiva">COME FUNZIONA</a>
-        <a href="../pages/manuale.html">MANUALE</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="chi_siamo.html">Chi siamo</a></li>
+            <li><a href="installa.html">Installa</a></li>
+            <li><a href="come_funziona.html" class="attivo">Come funziona</a></li>
+            <li><a href="manuale.html">Manuale sicurezza online</a></li>
+        </ul>
     </nav>
-    <div id="margine-main">
-        <main>
-            <section id="come-funziona" class="how-it-works">
+
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main>
+
+        <section class="presentazione">
+
+            <div class="testo-presentazione">
+
                 <h1>Come funziona GoodUSB?</h1>
-                <h2>Che cosa sono gli attacchi BadUSB?</h2>
+
+                <h2>Riconoscere i comportamenti sospetti.</h2>
 
                 <p>
-                    Alcuni dispositivi USB possono presentarsi al computer come periferiche differenti da quelle che sembrano essere.
-                    In particolare, alcuni dispositivi malevoli possono simulare il comportamento di una tastiera e inviare automaticamente sequenze di comandi al sistema operativo.
-                    Questa tecnica è conosciuta come Keystroke Injection e può essere sfruttata per eseguire operazioni non autorizzate.
+                    AntiBadUSB è progettato per individuare
+                    comportamenti anomali nella digitazione,
+                    potenzialmente riconducibili agli attacchi
+                    automatizzati attraverso dispositivi USB.
                 </p>
 
-                <h2>L'importanza dell'analisi temporale</h2>
+                <a href="#funzionamento" class="pulsante">
+                    Scopri le fasi
+                </a>
 
-                <p>
-                    Uno degli elementi utilizzati da AntiBadUSB per riconoscere possibili attacchi è l'intervallo di tempo tra una pressione e l'altra dei tasti.
-                    Una digitazione automatizzata può presentare intervalli molto brevi e regolari rispetto a quelli normalmente osservabili durante l'utilizzo manuale di una tastiera.
-                    Il programma utilizza quindi una soglia temporale per individuare sequenze potenzialmente anomale.
-                </p>
-                <h3>1. Il Problema: Attacchi Keystroke Injection</h3>
-                <p>I dispositivi BadUSB si camuffano da tastiere e iniettano comandi malevoli nel Prompt dei Comandi ad altissima velocità.</p>
-              
-                <h3>2. La Soluzione: Analisi Temporale</h3>
-                <p>AntiBadUSB misura il tempo tra ogni pressione dei tasti: se rileva 5 caratteri consecutivi ricevuti in meno di 30ms, classifica la digitazione come un attacco automatizzato.</p>
-              
-                <h3>3. Blocco Immediato</h3>
-                <p>Il software termina all'istante i processi <code>cmd.exe</code> e <code>powershell.exe</code> e mostra un allarme nativo, bloccando l'attacco prima dell'esecuzione.</p>
-              </section>
-        </main>
-    </div>
+            </div>
+
+            <div class="immagine-presentazione">
+                <img src="../images/logo.png" alt="Logo GoodUSB">
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUZIONE -->
+        <section class="progetto ombra">
+
+            <h1>Che cosa sono gli attacchi BadUSB?</h1>
+
+            <p>
+                Alcuni dispositivi USB possono presentarsi
+                al computer come periferiche differenti
+                da quelle che sembrano essere.
+            </p>
+
+            <p>
+                In particolare, alcuni dispositivi malevoli
+                possono simulare il comportamento di una tastiera
+                e inviare automaticamente sequenze di comandi
+                al sistema operativo.
+            </p>
+
+            <p>
+                Questa tecnica è conosciuta come
+                <strong>Keystroke Injection</strong> e può
+                essere sfruttata per eseguire operazioni
+                non autorizzate.
+            </p>
+
+        </section>
+
+
+        <!-- FUNZIONAMENTO -->
+        <section class="caratteristiche" id="funzionamento">
+
+            <h1>Come interviene AntiBadUSB?</h1>
+
+            <div class="contenitore-card">
+
+                <div class="card ombra">
+                    <h2>1. Rilevamento</h2>
+
+                    <p>
+                        I dispositivi BadUSB possono camuffarsi
+                        da tastiere e inviare sequenze di comandi
+                        a velocità molto elevate.
+                    </p>
+                </div>
+
+                <div class="card ombra">
+                    <h2>2. Analisi temporale</h2>
+
+                    <p>
+                        AntiBadUSB analizza gli intervalli temporali
+                        tra le pressioni dei tasti, cercando
+                        sequenze potenzialmente sospette.
+                    </p>
+                </div>
+
+                <div class="card ombra">
+                    <h2>3. Intervento</h2>
+
+                    <p>
+                        Quando viene rilevato un comportamento
+                        sospetto, il programma avvia la procedura
+                        di protezione prevista.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALISI TECNICA -->
+        <section class="progetto ombra">
+
+            <h1>L'importanza dell'analisi temporale</h1>
+
+            <p>
+                Uno degli elementi utilizzati da AntiBadUSB
+                per riconoscere possibili attacchi è
+                l'intervallo di tempo tra una pressione
+                e l'altra dei tasti.
+            </p>
+
+            <p>
+                Una digitazione automatizzata può presentare
+                intervalli molto brevi e regolari rispetto
+                a quelli normalmente osservabili durante
+                l'utilizzo manuale di una tastiera.
+            </p>
+
+            <p>
+                Il programma utilizza quindi una soglia
+                temporale per individuare sequenze
+                potenzialmente anomale.
+            </p>
+
+            <h2>Parametri di rilevamento</h2>
+
+            <ul>
+                <li>Monitoraggio degli intervalli tra i tasti.</li>
+                <li>Analisi di cinque caratteri consecutivi.</li>
+                <li>Soglia temporale di 30 millisecondi.</li>
+                <li>Individuazione di sequenze potenzialmente automatizzate.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- PROTEZIONE -->
+        <section class="caratteristiche">
+
+            <h1>Il sistema di protezione</h1>
+
+            <div class="contenitore-card">
+
+                <div class="card ombra">
+                    <h2>Rilevamento</h2>
+                    <p>
+                        Individuazione di sequenze di digitazione
+                        potenzialmente anomale.
+                    </p>
+                </div>
+
+                <div class="card ombra">
+                    <h2>Valutazione</h2>
+                    <p>
+                        Analisi del comportamento rilevato
+                        attraverso i parametri temporali.
+                    </p>
+                </div>
+
+                <div class="card ombra">
+                    <h2>Intervento</h2>
+                    <p>
+                        Attivazione delle procedure di protezione
+                        previste dal software.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MANUALE -->
+        <section class="progetto ombra">
+
+            <h1>Vuoi saperne di più?</h1>
+
+            <p>
+                Consulta il manuale di sicurezza online
+                per approfondire il funzionamento di GoodUSB
+                e le caratteristiche del programma.
+            </p>
+
+            <a href="manuale.html" class="pulsante">
+                Vai al manuale
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
     <footer>
-        <hr>
-        <p>GoodUSB - Matteo Savoiani, Roberto Marchi, Valerio Rigotti e Pietro Zanella. ©2026 tutti i diritti riservati</p>
+        <p>
+            GoodUSB - Pietro Zanella, Matteo Savoiani, Roberto Marchi, Valerio Rigotto. <br>
+            ©2026 Tutti i diritti riservati.
+        </p>
     </footer>
+
 </body>
 </html>

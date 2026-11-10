@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const url_file = '../GoodUSB.exe';
 
-    let ha_scaricato = false;
+    let ha_scaricato = false;  
 
     if (bottone) {
         bottone.addEventListener('click', function() {
