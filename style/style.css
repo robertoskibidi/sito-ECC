@@ -135,7 +135,7 @@ nav .attivo {
 }
 
 .immagine-presentazione img {
-    width: 220px;
+    width: clamp(20px, 20vw, 250px);
 }
 
 
