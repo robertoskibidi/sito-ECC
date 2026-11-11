@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 ha_scaricato = true;
             } else {
-                bottone.innerHTML = 'Installa';
+                bottone.innerHTML = 'Installa GoodUSB';
                 bottone.classList.remove('checked');
                 if (msg_ringraziamento) {
                     msg_ringraziamento.style.display = 'none';
