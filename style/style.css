@@ -41,7 +41,7 @@ header {
 }
 
 .intestazione img {
-    width: 65px;
+    width: clamp(20px, 4vw, 70px);
 }
 
 .intestazione h1 {
