@@ -41,7 +41,7 @@ header {
 }
 
 .intestazione img {
-    width: clamp(20px, 4vw, 70px);
+    width: clamp(20px, 15vw, 70px);
 }
 
 .intestazione h1 {
@@ -69,7 +69,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: clamp(3px, 3vw, 60px);
 }
 
 nav a {
